@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>htaccess Redirect Test-Generator</title>
+</head>
+<body>
+    <h1>htaccess Redirect Test-Generator</h1>
+    <p>Converts a csv file to testable links.</p>
+    <form action="redirect-test-upload.php" method="post" enctype="multipart/form-data">
+        Select csv file to upload: <input type="file" name="fileToUpload" id="fileToUpload"><br /><br />
+        <label for="fileGotHeaderRow"><input type="checkbox" checked="checked" name="fileGotHeaderRow" id="fileGotHeaderRow" value="true"> File got header-row</label><br/><br />
+
+        <fieldset>
+            <legend>Replace URL in second part:</legend>
+            Replace from: <input type="text" name="replaceUrlPart" value=""><br />
+            Replace with: <input type="text" name="replaceUrlWith" value=""><br />
+        </fieldset><br />
+        <input type="submit" value="Upload csv file" name="submit">
+    </form>
+</body>
+</html>
